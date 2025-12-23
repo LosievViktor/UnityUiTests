@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+  <ui:Style src="Styles/LoginForm.uss" />
+  <ui:VisualElement name="root" class="page-root">
+
+    <ui:VisualElement name="loginPanel" class="login-panel">
+
+      <ui:Label text="Login" class="login-title" />
+
+      <ui:TextField name="username" label="Username" />
+      <ui:TextField name="password" label="Password" password="true" />
+
+      <ui:Toggle name="remember" label="Remember user" />
+
+      <ui:RadioButtonGroup name="mode" label="Mode">
+        <ui:RadioButton text="Online" />
+        <ui:RadioButton text="Offline" />
+      </ui:RadioButtonGroup>
+
+      <ui:Button name="loginButton" text="Login" />
+      <ui:Label name="resultMessage" class="result-message" />
+    </ui:VisualElement>
+
+  </ui:VisualElement>
+</ui:UXML>

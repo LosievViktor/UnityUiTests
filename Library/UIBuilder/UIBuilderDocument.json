@@ -1,0 +1,76 @@
+{
+    "MonoBehaviour": {
+        "m_Enabled": true,
+        "m_EditorHideFlags": 0,
+        "m_Name": "BuilderDocument",
+        "m_EditorClassIdentifier": "UnityEditor.UIBuilderModule:Unity.UI.Builder:BuilderDocument",
+        "m_SavedBuilderUxmlToThemeStyleSheetList": [],
+        "m_CurrentCanvasTheme": 4,
+        "m_CurrentCanvasThemeStyleSheetReference": {
+            "fileID": -4733365628477956816,
+            "guid": "e7b1ed140e6700949b6d3a1461dceea7",
+            "type": 3
+        },
+        "m_CodePreviewVisible": true,
+        "m_OpenUXMLFiles": [
+            {
+                "m_OpenUSSFiles": [
+                    {
+                        "m_StyleSheet": {
+                            "fileID": 7433441132597879392,
+                            "guid": "5b17d1ca8e106c3488a0f0384a09ab7b",
+                            "type": 3
+                        },
+                        "m_ContentHash": 125863194,
+                        "m_UssPreview": ".page-root {\r\n    width: 100%;\r\n    height: 100%;\r\n    justify-content: center;\r\n    align-items: center;\r\n    background-color: rgb(255, 255, 255);\r\n}\r\n\r\n.login-panel {\r\n    width: 800px;\r\n    height: 600px;\r\n    padding: 40px;\r\n    gap: 16px;\r\n    background-color: rgb(238, 243, 251);\r\n    border-radius: 12px;\r\n    justify-content: center;\r\n}\r\n\r\n.login-title {\r\n    font-size: 28px;\r\n    unity-font-style: bold;\r\n    color: rgb(44, 47, 51);\r\n    margin-bottom: 24px;\r\n}\r\n\r\nTextField {\r\n    width: 100%;\r\n}\r\n\r\nToggle {\r\n    margin-top: 8px;\r\n}\r\n\r\nButton {\r\n    margin-top: 24px;\r\n    height: 40px;\r\n    background-color: rgb(13, 110, 253);\r\n    color: white;\r\n    border-radius: 6px;\r\n}\r\n\r\nButton:hover {\r\n    background-color: rgb(11, 94, 215);\r\n}\r\n\r\n.result-message {\r\n    margin-top: 16px;\r\n    font-size: 16px;\r\n}\r\n\r\n.result-message.success {\r\n    color: rgb(25, 135, 84);\r\n}\r\n\r\n.result-message.error {\r\n    color: rgb(220, 53, 69);\r\n}\r\n",
+                        "m_OldPath": "Assets/UI/Styles/LoginForm.uss"
+                    }
+                ],
+                "m_OpenendVisualTreeAssetOldPath": "Assets/UI/LoginForm.uxml",
+                "m_UxmlPreview": "<ui:UXML xmlns:ui=\"UnityEngine.UIElements\">\r\n    <Style src=\"project://database/Assets/UI/Styles/LoginForm.uss?fileID=7433441132597879392&amp;guid=5b17d1ca8e106c3488a0f0384a09ab7b&amp;type=3#LoginForm\"/>\r\n    <ui:VisualElement name=\"root\" class=\"page-root\">\r\n        <ui:VisualElement name=\"loginPanel\" class=\"login-panel\">\r\n            <ui:Label text=\"Login\" class=\"login-title\"/>\r\n            <ui:TextField name=\"username\" label=\"Username\"/>\r\n            <ui:TextField name=\"password\" label=\"Password\" password=\"true\"/>\r\n            <ui:Toggle name=\"remember\" label=\"Remember user\"/>\r\n            <ui:RadioButtonGroup name=\"mode\" label=\"Mode\">\r\n                <ui:RadioButton text=\"Online\"/>\r\n                <ui:RadioButton text=\"Offline\"/>\r\n            </ui:RadioButtonGroup>\r\n            <ui:Button name=\"loginButton\" text=\"Login\"/>\r\n            <ui:Label name=\"resultMessage\" class=\"result-message\"/>\r\n        </ui:VisualElement>\r\n    </ui:VisualElement>\r\n</ui:UXML>\r\n",
+                "m_ContentHash": -992302830,
+                "m_VisualTreeAssetRef": {
+                    "fileID": 9197481963319205126,
+                    "guid": "5102884d3a1c9df448826b6a490b8b1d",
+                    "type": 3
+                },
+                "m_TemplateAssetId": 0,
+                "m_ActiveStyleSheet": {
+                    "instanceID": 0
+                },
+                "m_Settings": {
+                    "UxmlGuid": "5102884d3a1c9df448826b6a490b8b1d",
+                    "UxmlPath": "Assets/UI/LoginForm.uxml",
+                    "CanvasX": 0,
+                    "CanvasY": 0,
+                    "CanvasWidth": 350,
+                    "CanvasHeight": 450,
+                    "MatchGameView": false,
+                    "ZoomScale": 1.0,
+                    "PanOffset": {
+                        "x": 20.0,
+                        "y": 20.0
+                    },
+                    "ColorModeBackgroundOpacity": 1.0,
+                    "ImageModeCanvasBackgroundOpacity": 1.0,
+                    "CameraModeCanvasBackgroundOpacity": 1.0,
+                    "EnableCanvasBackground": false,
+                    "CanvasBackgroundMode": 0,
+                    "CanvasBackgroundColor": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 0.0,
+                        "a": 1.0
+                    },
+                    "CanvasBackgroundImage": {
+                        "instanceID": 0
+                    },
+                    "CanvasBackgroundImageScaleMode": 1,
+                    "CanvasBackgroundCameraName": ""
+                },
+                "m_OpenSubDocumentParentIndex": -1
+            }
+        ],
+        "m_ActiveOpenUXMLFileIndex": 0
+    }
+}

@@ -1,0 +1,86 @@
+ScriptsOnlyBuild:
+  usedScripts:
+    Unity.Rider.Editor.dll:
+    - Packages.Rider.Editor.RiderScriptEditorData
+    - Packages.Rider.Editor.RiderScriptEditorPersistedState
+    - Packages.Rider.Editor.UnitTesting.CallbackData
+    UnityEditor.TestRunner.dll:
+    - UnityEditor.TestTools.TestRunner.CommandLineTest.RunData
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
+    - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+  serializedClasses:
+    UnityEngine.UIElementsModule:
+    - UnityEngine.UIElements.Button/UxmlFactory
+    - UnityEngine.UIElements.Button/UxmlSerializedData
+    - UnityEngine.UIElements.DynamicAtlasSettings
+    - UnityEngine.UIElements.RadioButton/UxmlFactory
+    - UnityEngine.UIElements.RadioButton/UxmlSerializedData
+    - UnityEngine.UIElements.RadioButtonGroup/UxmlFactory
+    - UnityEngine.UIElements.RadioButtonGroup/UxmlSerializedData
+    - UnityEngine.UIElements.StyleComplexSelector
+    - UnityEngine.UIElements.StyleProperty
+    - UnityEngine.UIElements.StyleRule
+    - UnityEngine.UIElements.StyleSelector
+    - UnityEngine.UIElements.StyleSelectorPart
+    - UnityEngine.UIElements.StyleSheet/ImportStruct
+    - UnityEngine.UIElements.StyleSheets.Dimension
+    - UnityEngine.UIElements.StyleSheets.ScalableImage
+    - UnityEngine.UIElements.StyleValueHandle
+    - UnityEngine.UIElements.TextField/UxmlFactory
+    - UnityEngine.UIElements.TextField/UxmlSerializedData
+    - UnityEngine.UIElements.Toggle/UxmlFactory
+    - UnityEngine.UIElements.Toggle/UxmlSerializedData
+    - UnityEngine.UIElements.UxmlRootElementFactory
+    - UnityEngine.UIElements.VisualElement/UxmlFactory
+    - UnityEngine.UIElements.VisualElement/UxmlSerializedData
+    - UnityEngine.UIElements.VisualElementAsset
+  methodsToPreserve: []
+  sceneClasses:
+    Assets/Scenes/LoginScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 636}
+    - Class: 114
+      Script: {instanceID: 612}
+    - Class: 114
+      Script: {instanceID: 614}
+    - Class: 114
+      Script: {instanceID: 638}
+    - Class: 114
+      Script: {instanceID: 610}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+  scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 35777c1a76bc3060ad83ac724b285144
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: LoginUI
+  platform: 19
+  scenePathNames:
+  - Assets/Scenes/LoginScene.unity
+  playerPath: C:/UnityApp/UnityUiTests.exe
