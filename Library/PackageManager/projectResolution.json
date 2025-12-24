@@ -19,16 +19,6 @@
       "source": "registry",
       "testable": false
     },
-    "com.unity.multiplayer.center@1.0.1": {
-      "name": "com.unity.multiplayer.center",
-      "displayName": "Multiplayer Center",
-      "resolvedPath": "C:\\repository\\UnityUiTests\\Library\\PackageCache\\com.unity.multiplayer.center@f01f4ba8d00a",
-      "fingerprint": "f01f4ba8d00afa4e957bddf0fcd1612a564401ff",
-      "editorCompatibility": "6000.0.0a1",
-      "version": "1.0.1",
-      "source": "builtin",
-      "testable": false
-    },
     "com.unity.test-framework@1.6.0": {
       "name": "com.unity.test-framework",
       "displayName": "Test Framework",

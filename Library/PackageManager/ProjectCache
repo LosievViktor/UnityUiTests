@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639021027082174160
-    m_Hash: 2945104255
+      ticks: 639021794317407660
+    m_Hash: 1216226503
   m_LockFileStatus:
     m_FilePath: C:/repository/UnityUiTests/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639021027082229553
-    m_Hash: 2687540635
+      ticks: 639021794317484174
+    m_Hash: 3679562544
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -147,102 +147,6 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 3.0.38
     minimumUnityVersion: 2021.3
-  compliance:
-    status: 0
-    violation:
-      scopePatternExpression: 
-      message: 
-      readMoreLink: 
-- packageId: com.unity.multiplayer.center@1.0.1
-  testable: 0
-  isDirectDependency: 1
-  version: 1.0.1
-  source: 2
-  resolvedPath: C:\repository\UnityUiTests\Library\PackageCache\com.unity.multiplayer.center@f01f4ba8d00a
-  assetPath: Packages/com.unity.multiplayer.center
-  name: com.unity.multiplayer.center
-  displayName: Multiplayer Center
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: 
-  description: The multiplayer center provides a starting point to create multiplayer
-    games. It will recommend specific packages and enable you to easily access integrations,
-    samples and documentation.
-  errors: []
-  versions:
-    all:
-    - 1.0.1
-    compatible:
-    - 1.0.1
-    recommended: 1.0.1
-    deprecated: []
-  dependencies:
-  - name: com.unity.modules.uielements
-    version: 1.0.0
-  resolvedDependencies:
-  - name: com.unity.modules.uielements
-    version: 1.0.0
-  - name: com.unity.modules.ui
-    version: 1.0.0
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.modules.hierarchycore
-    version: 1.0.0
-  - name: com.unity.modules.physics
-    version: 1.0.0
-  keywords:
-  - Multiplayer
-  - Netcode
-  - Services
-  - Tools
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-    compliance:
-      status: 0
-      violations: []
-  hideInEditor: 1
-  entitlements:
-    licensingModel: 0
-  isAssetStorePackage: 0
-  datePublishedTicks: 0
-  documentationUrl: 
-  hasRepository: 0
-  repository:
-    type: 
-    url: 
-    revision: 
-    path: 
-  unityLifecycle:
-    version: 1.0.1
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-    isDiscoverable: 1
-  isDeprecated: 0
-  deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
-  fingerprint: f01f4ba8d00afa4e957bddf0fcd1612a564401ff
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.1
-    minimumUnityVersion: 6000.0
   compliance:
     status: 0
     violation:

@@ -21,7 +21,7 @@
                             "guid": "5b17d1ca8e106c3488a0f0384a09ab7b",
                             "type": 3
                         },
-                        "m_ContentHash": 125863194,
+                        "m_ContentHash": 589193410,
                         "m_UssPreview": ".page-root {\r\n    width: 100%;\r\n    height: 100%;\r\n    justify-content: center;\r\n    align-items: center;\r\n    background-color: rgb(255, 255, 255);\r\n}\r\n\r\n.login-panel {\r\n    width: 800px;\r\n    height: 600px;\r\n    padding: 40px;\r\n    gap: 16px;\r\n    background-color: rgb(238, 243, 251);\r\n    border-radius: 12px;\r\n    justify-content: center;\r\n}\r\n\r\n.login-title {\r\n    font-size: 28px;\r\n    unity-font-style: bold;\r\n    color: rgb(44, 47, 51);\r\n    margin-bottom: 24px;\r\n}\r\n\r\nTextField {\r\n    width: 100%;\r\n}\r\n\r\nToggle {\r\n    margin-top: 8px;\r\n}\r\n\r\nButton {\r\n    margin-top: 24px;\r\n    height: 40px;\r\n    background-color: rgb(13, 110, 253);\r\n    color: white;\r\n    border-radius: 6px;\r\n}\r\n\r\nButton:hover {\r\n    background-color: rgb(11, 94, 215);\r\n}\r\n\r\n.result-message {\r\n    margin-top: 16px;\r\n    font-size: 16px;\r\n}\r\n\r\n.result-message.success {\r\n    color: rgb(25, 135, 84);\r\n}\r\n\r\n.result-message.error {\r\n    color: rgb(220, 53, 69);\r\n}\r\n",
                         "m_OldPath": "Assets/UI/Styles/LoginForm.uss"
                     }
