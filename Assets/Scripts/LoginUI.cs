@@ -44,7 +44,7 @@ using UnityEngine.UIElements;
                 if (AuthService.IsValid(usernameField.value, passwordField.value))
                 {
                     rememberUserMessage.text = "Remember user:"+checkboxRememberUser.value;
-                    onlineStatusMessage.text = "Mode: "+ labelsRadio[radio.value];
+                    onlineStatusMessage.text = "Mode:"+ labelsRadio[radio.value];
                     resultLabel.text = "Access granted.";
                     resultLabel.RemoveFromClassList("error");
                     resultLabel.AddToClassList("success");
@@ -53,7 +53,7 @@ using UnityEngine.UIElements;
                 else
                 {
                     rememberUserMessage.text =  "Remember user:"+checkboxRememberUser.value;
-                    onlineStatusMessage.text = "Mode: "+ labelsRadio[radio.value];
+                    onlineStatusMessage.text = "Mode:"+ labelsRadio[radio.value];
                     resultLabel.text = "Access denied.";
                     resultLabel.RemoveFromClassList("success");
                     resultLabel.AddToClassList("error");

@@ -13,7 +13,7 @@
       <ui:Toggle name="remember" label="Remember user" />
 
       <ui:RadioButtonGroup name="mode" label="Mode">
-        <ui:RadioButton text="Online" />
+        <ui:RadioButton text="Online" value="true" />
         <ui:RadioButton text="Offline" />
       </ui:RadioButtonGroup>
 

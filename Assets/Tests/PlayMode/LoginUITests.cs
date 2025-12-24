@@ -15,14 +15,16 @@ public class LoginPlayModeTests
     private Toggle remember;
     private RadioButtonGroup mode;
     private Button loginButton;
-    private Label result;
+    private Label resultMessage;
+    private Label rememberUserMessage;
+    private Label onlineStatusMessage;
 
     [UnitySetUp]
     public IEnumerator SetUp()
     {
         SceneManager.LoadScene(SceneName);
         yield return null;
-        yield return null; // UI Toolkit needs 2 frames
+        yield return null; 
 
         var doc = Object.FindFirstObjectByType<UIDocument>();
         root = doc.rootVisualElement;
@@ -32,44 +34,127 @@ public class LoginPlayModeTests
         remember = root.Q<Toggle>("remember");
         mode = root.Q<RadioButtonGroup>("mode");
         loginButton = root.Q<Button>("loginButton");
-        result = root.Q<Label>("resultMessage");
+        resultMessage = root.Q<Label>("resultMessage");
+        rememberUserMessage = root.Q<Label>("rememberUserMessage");
+        onlineStatusMessage  = root.Q<Label>("onlineStatusMessage"); 
     }
     
     [UnityTest]
-    public IEnumerator Successful_Login_Online_RememberOn()
+    public IEnumerator Success_Login()
+    {
+        username.value = "Viktor";
+        password.value = "password";
+        yield return ButtonClick(loginButton);
+        yield return null;
+        Assert.AreEqual("Access granted.", resultMessage.text);
+        Assert.AreEqual("Remember user:False",rememberUserMessage.text);
+        Assert.AreEqual("Mode:Online",onlineStatusMessage.text);
+    }
+    
+    [UnityTest]
+    public IEnumerator Fail_Login()
+    {
+        username.value = "Viktor";
+        password.value = "wrong";
+        yield return ButtonClick(loginButton);
+        yield return null;
+        Assert.AreEqual("Access denied.", resultMessage.text);
+        Assert.AreEqual("Remember user:False",rememberUserMessage.text);
+        Assert.AreEqual("Mode:Online",onlineStatusMessage.text);
+    }
+    
+    [UnityTest]
+    public IEnumerator Success_Login_RememberUser()
     {
         username.value = "Viktor";
         password.value = "password";
         remember.value = true;
-        mode.value = 0; // Online
-        
-        yield return Click();
-
+        yield return ButtonClick(loginButton);
         yield return null;
-        Assert.AreEqual("Access granted.", result.text);
+        Assert.AreEqual("Access granted.", resultMessage.text);
+        Assert.AreEqual("Remember user:True",rememberUserMessage.text);
+        Assert.AreEqual("Mode:Online",onlineStatusMessage.text);
     }
     
     [UnityTest]
-    public IEnumerator Failed_Login_Offline_RememberOff()
+    public IEnumerator Fail_Login_RememberUser()
     {
         username.value = "Viktor";
         password.value = "wrong";
-        remember.value = false;
-        mode.value = 1; // Offline
-        
-        yield return Click();
-
+        remember.value = true;
+        yield return ButtonClick(loginButton);
         yield return null;
-        Assert.AreEqual("Access denied.", result.text);
+        Assert.AreEqual("Access denied.", resultMessage.text);
+        Assert.AreEqual("Remember user:True",rememberUserMessage.text);
+        Assert.AreEqual("Mode:Online",onlineStatusMessage.text);
     }
-
-    private IEnumerator Click()
+    
+    [UnityTest]
+    public IEnumerator Success_Login_RememberUser_OfflineMode()
     {
-        yield return new WaitForSeconds(1);
-        Debug.Log($"Trying to click login button {loginButton.text}");
-        loginButton.Focus();
+        username.value = "Viktor";
+        password.value = "password";
+        mode.value = 1;
+        remember.value = true;
+        yield return ButtonClick(loginButton);
+        yield return null;
+        Assert.AreEqual("Access granted.", resultMessage.text);
+        Assert.AreEqual("Remember user:True",rememberUserMessage.text);
+        Assert.AreEqual("Mode:Offline",onlineStatusMessage.text);
+    }
+    
+    [UnityTest]
+    public IEnumerator Fail_Login_RememberUser_OfflineMode()
+    {
+        username.value = "Viktor";
+        password.value = "wrong";
+        mode.value = 1;
+        remember.value = true;
+        yield return ButtonClick(loginButton);
+        yield return null;
+        Assert.AreEqual("Access denied.", resultMessage.text);
+        Assert.AreEqual("Remember user:True",rememberUserMessage.text);
+        Assert.AreEqual("Mode:Offline",onlineStatusMessage.text);
+    }
+    
+    [UnityTest]
+    public IEnumerator Success_Login_OfflineMode()
+    {
+        username.value = "Viktor";
+        password.value = "password";
+        mode.value = 1;
+        yield return ButtonClick(loginButton);
+        yield return null;
+        Assert.AreEqual("Access granted.", resultMessage.text);
+        Assert.AreEqual("Remember user:False",rememberUserMessage.text);
+        Assert.AreEqual("Mode:Offline",onlineStatusMessage.text);
+    }
+    
+    [UnityTest]
+    public IEnumerator Fail_Login_OfflineMode()
+    {
+        username.value = "Viktor";
+        password.value = "wrong";
+        mode.value = 1;
+        yield return ButtonClick(loginButton);
+        yield return null;
+        Assert.AreEqual("Access denied.", resultMessage.text);
+        Assert.AreEqual("Remember user:False",rememberUserMessage.text);
+        Assert.AreEqual("Mode:Offline",onlineStatusMessage.text);
+    }
+    
+
+    private IEnumerator ButtonClick(Button button)
+    {
+        yield return null;
+        Debug.Log($"Trying to click login button {button.text}");
+        button.Focus();
         
-        // TODO - add code for click Login button. 
-        
+        using (var e = NavigationSubmitEvent.GetPooled())
+        {
+            e.target = button;
+            button.SendEvent(e);
+        }
+        yield return null;
     }
 }
