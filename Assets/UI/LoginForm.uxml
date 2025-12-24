@@ -18,6 +18,8 @@
       </ui:RadioButtonGroup>
 
       <ui:Button name="loginButton" text="Login" />
+      <ui:Label name="onlineStatusMessage" class="status-message" />
+      <ui:Label name="rememberUserMessage" class="status-message" />
       <ui:Label name="resultMessage" class="result-message" />
     </ui:VisualElement>
 
