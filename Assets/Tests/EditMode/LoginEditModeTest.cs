@@ -1,5 +1,4 @@
 using NUnit.Framework;
-
     public class LoginEditModeTests
     {
         [Test]

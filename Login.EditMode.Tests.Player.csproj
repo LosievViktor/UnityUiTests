@@ -659,6 +659,10 @@
       <Project>{baab3164-08f1-61e7-46cc-799e4b645808}</Project>
       <Name>UnityEngine.TestRunner.Player</Name>
     </ProjectReference>
+    <ProjectReference Include="NewAssembly.Player.csproj">
+      <Project>{355b68f4-8ca7-476c-5152-d5ce60202d1e}</Project>
+      <Name>NewAssembly.Player</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

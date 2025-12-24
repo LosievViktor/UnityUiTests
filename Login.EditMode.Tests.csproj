@@ -47,7 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Tests\EditMode\LoginEditModeTest.cs" />
-    <None Include="Assets\Tests\EditMode\Login.EditMode.Tests.asmdef" />
+    <None Include="Assets\Tests\EditMode\LoginEditMode.Tests.asmdef" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\6000.3.2f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -837,6 +837,10 @@
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
       <Project>{fe3ec3a5-d949-6d60-2c00-26934487e99d}</Project>
       <Name>UnityEngine.TestRunner</Name>
+    </ProjectReference>
+    <ProjectReference Include="NewAssembly.csproj">
+      <Project>{3a37ddaf-2b85-0085-af2b-330657842913}</Project>
+      <Name>NewAssembly</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

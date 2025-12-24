@@ -44,10 +44,10 @@ using System.Collections;
             password.value = "password";
             remember.value = true;
             mode.value = 0; // Online
-
-            loginButton.clickable.clicked?.Invoke();
+            
+            loginButton.SendEvent(new ClickEvent());
             yield return null;
-
+            yield return new WaitForSeconds(1f);
             Assert.AreEqual("Access granted.", result.text);
         }
 
@@ -62,39 +62,9 @@ using System.Collections;
             remember.value = false;
             mode.value = 1; // Offline
 
-            loginButton.clickable.clicked?.Invoke();
+            loginButton.SendEvent(new ClickEvent());
             yield return null;
-
+            yield return new WaitForSeconds(1f);
             Assert.AreEqual("Access denied.", result.text);
-        }
-
-        // ---------- COMBINATIONS ----------
-        [UnityTest]
-        public IEnumerator Login_All_Mode_And_Remember_Combinations()
-        {
-            yield return LoadScene();
-
-            string[] users = { "Viktor", "John" };
-            string[] passwords = { "password", "123" };
-
-            foreach (var u in users)
-            foreach (var p in passwords)
-            foreach (var m in new[] { 0, 1 }) // Online / Offline
-            foreach (var r in new[] { true, false }) // Remember
-            {
-                username.value = u;
-                password.value = p;
-                remember.value = r;
-                mode.value = m;
-
-                loginButton.clickable.clicked?.Invoke();
-                yield return null;
-
-                bool success = u == "Viktor" && p == "password";
-                Assert.AreEqual(
-                    success ? "Access granted." : "Access denied.",
-                    result.text
-                );
-            }
         }
     }

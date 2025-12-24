@@ -656,13 +656,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Login.EditMode.Tests.Player.csproj">
-      <Project>{82638e11-dcfd-163c-5aeb-7ddb5b929f9a}</Project>
-      <Name>Login.EditMode.Tests.Player</Name>
-    </ProjectReference>
     <ProjectReference Include="Login.PlayMode.Tests.Player.csproj">
       <Project>{381dc0eb-482b-b49b-f686-34d93fc795b8}</Project>
       <Name>Login.PlayMode.Tests.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="Login.EditMode.Tests.Player.csproj">
+      <Project>{82638e11-dcfd-163c-5aeb-7ddb5b929f9a}</Project>
+      <Name>Login.EditMode.Tests.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Multiplayer.Center.Common.Player.csproj">
       <Project>{cdc30955-2d73-b0e8-babc-3ec2c88f20e8}</Project>
